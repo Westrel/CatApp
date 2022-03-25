@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猫癣智能诊断</title>
+</head>
+<body>
+   <center>
+    <form method="post" action="/load" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <h1>欢迎使用猫癣智能诊断系统</h1>
+        <hr/>
+        <h2>请输入您要诊断的图片</h2>
+        <input type="file" name="myfile">
+        <input type="submit" value="问诊">
+    </form>
+    </center>
+
+</body>
+</html>
